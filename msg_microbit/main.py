@@ -1,8 +1,8 @@
 import serial
+import requests
 
 port = "COM6"
 conn = serial.Serial(port, 115200)
 
-msg = input("Message: ")
-
-conn.write(msg.encode())
+message = input("Message: ")
+conn.write(message.encode())
